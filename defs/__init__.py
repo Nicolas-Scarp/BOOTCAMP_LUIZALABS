@@ -34,7 +34,10 @@ def seis():
             print("Opção Inválida")
 def sete():
     curso = input("Digite algo: ")
-    print(curso.center(10,"#"))
+    print(curso.upper())
+    print(curso.lower())
+    print(curso.title())
+    print(curso.center(16,"#"))
     print(".".join(curso))
 
   
