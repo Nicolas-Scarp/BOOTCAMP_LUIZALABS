@@ -7,7 +7,8 @@ functions = {
     "QUATRO":defs.quatro,
     "CINCO":defs.cinco,
     "SEIS":defs.seis,
-    "SETE":defs.sete
+    "SETE":defs.sete,
+    "OITO":defs.oito
 }
 
 func = input("Qual código voce quer rodar?").upper()
