@@ -87,11 +87,9 @@ def dez():
     for i,j in enumerate(pessoa1):
         print(f"{i+1} : {j}")
     print("====================================")
-    for i in len(matriz):
-        for j in len(matriz):
-            print(f"{matriz[i][j]} ====== {matriz}")
-
-"""for j in matriz:"""
+    for i in range(len(matriz)):
+        for j in range(len(matriz)):
+            print(f"{j+1}_Lista{i+1}: {matriz[i][j]}")
 
 def onze():
     print()
