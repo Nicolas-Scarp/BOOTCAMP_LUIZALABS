@@ -60,3 +60,14 @@ def oito():
     print("\nMeu nome é {0} {3}, eu tenho {1} anos e faço {2} na {4}!" .format(nome.title(),idade,curso.title(),sobrenome.title(),universidade.upper()))
     print("\nMeu nome é {a} {b}, eu tenho {c} anos e faço {d} na {e}!" .format(**dados))
     print(f"\nMeu nome é {nome.title()} {sobrenome.title()}, eu tenho {idade} anos e faço {curso.title()} na {universidade.upper()}!")
+
+def nove():
+    variable="Nick Scarp: The Programmer"
+    print(variable[:10])
+    print(variable[12:])
+    print(variable[5:10])
+    print(variable[5:15:2])
+    print(variable[::-1])
+
+def dez():
+    print("")
