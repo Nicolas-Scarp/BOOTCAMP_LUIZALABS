@@ -70,4 +70,28 @@ def nove():
     print(variable[::-1])
 
 def dez():
-    print("")
+    pessoa1=["Nick", "19 anos", "Estudante UFF"]
+    print(pessoa1)
+    pessoa2=["Livi", "18 anos", "Estudante UFJF"]
+    print(pessoa2)
+    python=list("Python")
+    print(python)
+    numeros=list(range(10))
+    print(numeros)
+    matriz=[
+        ["Nick", "19 anos", "Estudante UFF"],
+        ["Livi", "18 anos", "Estudante UFJF"],
+        ["Namorando", "3 anos", "Felizes"]
+    ]
+    print(f"{matriz[0][0]} e {matriz[1][0]} estão {matriz[2][0]} há {matriz[2][1]}.")
+    for i,j in enumerate(pessoa1):
+        print(f"{i+1} : {j}")
+    print("====================================")
+    for i in len(matriz):
+        for j in len(matriz):
+            print(f"{matriz[i][j]} ====== {matriz}")
+
+"""for j in matriz:"""
+
+def onze():
+    print()
