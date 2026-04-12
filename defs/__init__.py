@@ -92,4 +92,16 @@ def dez():
             print(f"{j+1}_Lista{i+1}: {matriz[i][j]}")
 
 def onze():
-    print()
+
+    dic={
+        "Nicolas Scarp": {"Idade" : "19 Anos" , "Faculdade" : "UFF"},
+        "Genilson Santos": {"Idade" : "32 Anos", "Faculdade" : "Fiap"}
+    }
+
+    print(dic["Nicolas Scarp"]["Idade"])
+    print(dic["Nicolas Scarp"]["Faculdade"])
+    print(dic["Genilson Santos"]["Idade"])
+    print(dic["Genilson Santos"]["Faculdade"])
+    print("====================================================")
+    for chave,valor in dic.items():
+        print(chave,valor)
