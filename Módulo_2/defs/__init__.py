@@ -18,12 +18,16 @@ class Bicicleta:
     def __str__(self):
         return f"Bicicleta: {self.cor}, {self.modelo}, {self.ano}, {self.valor}"
  
+b1 = Bicicleta("cor","modelo","ano","valor")
 
-funções ={
-    "CORRER":Bicicleta.correr
+fun ={
+    "CORRER":b1.correr,
+    "PARAR":b1.parar,
+    "BUZINAR":b1.buzinar
+
 }
 
-b1 = Bicicleta("cor","modelo","ano","valor")
+
 
 print(f"\nA bicicleta tem a cor {b1.cor}, é do modelo {b1.modelo}, do ano de {b1.ano}, no valor de R${b1.valor}")
 
@@ -32,15 +36,16 @@ print("Faça a sua escolha!!!")
 print("Correr | Buzinar | Parar")
 print("================================")
 
+while True:
+    func = input("O que deseja fazer? ").upper()
 
-func = input("").upper()
-escolha = funções.get(func)
-print(escolha)
+    if func == "EXIT":
+        break
 
-if escolha:
-    b1.escolha()
+    escolha = fun.get(func)
 
-'''b1.correr()
-b1.parar()
-b1.buzinar()'''
+    if escolha:
+        escolha()
+    else:
+        print("Valor inválido!")
 
