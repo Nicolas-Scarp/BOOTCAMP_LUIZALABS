@@ -20,51 +20,27 @@ def bike():
             return f"Bicicleta: {self.cor}, {self.modelo}, {self.ano}, {self.valor}"
     
 
-<<<<<<< Updated upstream
-    def __str__(self):
-        return f"Bicicleta: {self.cor}, {self.modelo}, {self.ano}, {self.valor}"
+
+        def __str__(self):
+            return f"Bicicleta: {self.cor}, {self.modelo}, {self.ano}, {self.valor}"
  
-b1 = Bicicleta("cor","modelo","ano","valor")
 
-fun ={
-    "CORRER":b1.correr,
-    "PARAR":b1.parar,
-    "BUZINAR":b1.buzinar
-
-}
-
-
-=======
     b1 = Bicicleta("cor","modelo","ano","valor")
 
     fun ={
         "CORRER":b1.correr,
         "PARAR":b1.parar,
         "BUZINAR":b1.buzinar
+
     }
 
     print(f"\nA bicicleta tem a cor {b1.cor}, é do modelo {b1.modelo}, do ano de {b1.ano}, no valor de R${b1.valor}")
->>>>>>> Stashed changes
 
     print("\n================================")
     print("Faça a sua escolha!!!")
     print("Correr | Buzinar | Parar")
     print("================================")
 
-while True:
-    func = input("O que deseja fazer? ").upper()
-
-<<<<<<< Updated upstream
-    if func == "EXIT":
-        break
-
-    escolha = fun.get(func)
-
-    if escolha:
-        escolha()
-    else:
-        print("Valor inválido!")
-=======
     while True:
         func = input("\n").upper()
         if func in fun:
@@ -75,8 +51,7 @@ while True:
             print("Comando Inválido!")
 
 def wait():
-    print("wait a moment")
->>>>>>> Stashed changes
+    print("\nwait a moment")
 
 def wait2():
-    print("wait a moment 2")
+    print("\nwait a moment 2")
