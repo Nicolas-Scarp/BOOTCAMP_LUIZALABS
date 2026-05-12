@@ -50,8 +50,34 @@ def bike():
         else:
             print("Comando Inválido!")
 
-def wait():
-    print("\nwait a moment")
+def animal():
+    class animal:
+        def locomoção(self):
+            print("Locomovendo...")
+
+    class algum_animal(animal):
+        def locomoção(self):
+            super().locomoção()
+
+    class cachorro(animal):
+        def locomoção(self):
+            print("Cachorro Anda!")
+
+    class canarinho(animal):
+        def locomoção(self):
+            print("Canarinho Voa!")
+
+    class cobra(animal):
+        def locomoção(self):
+            print("Cobra Rasteja!")
+
+    def locomover(animal):
+        animal.locomoção()
+
+    locomover(algum_animal())
+    locomover(cachorro())
+    locomover(canarinho())
+    locomover(cobra())
 
 def wait2():
     print("\nwait a moment 2")
