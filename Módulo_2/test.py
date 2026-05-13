@@ -8,10 +8,17 @@ class Estudante:
     def __str__(self) -> str:
         return f"{self.nome} - {self.matricula} - {self.escola}"
     
-    def cumprimento(self):
-        return f"Meu nome é {self.nome} e eu estudo na {self.escola} e minha matricula é {self.matricula}"
+def cumprimento(self):
+    return f"Meu nome é {self.nome} e eu estudo na {self.escola} e minha matricula é {self.matricula}"
 
-aluno_1 = Estudante("Nicolas",2107)
+
+"""============================================================================================"""
+
+nome = input("Digite seu nome: ")
+matricula = input("Digite sua matricula: ")
+
+aluno_1 = Estudante(nome,matricula)
+
 print(aluno_1)
 
 
